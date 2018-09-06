@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    tools:context="com.barcodeapp.MainActivity">
+
+    <Button
+        android:id="@+id/btnScanBarcode"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Scan barcode"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/tvBarcodeValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/app_name"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/btnGetValues"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:text="Get QR Code Data"
+        android:typeface="serif" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp">
+        <TextView
+            android:id="@+id/tvBarcodeServerValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="18sp"
+            android:typeface="serif" />
+
+    </ScrollView>
+</LinearLayout>
